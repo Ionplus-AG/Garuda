@@ -18,6 +18,9 @@ dotnet_csproj:
   file_version: '{version}'
   informational_version: '{version}'
 
+before_build:
+  - nuget restore
+
 build:
   parallel: true
   project: Ionplus.Garuda.sln
