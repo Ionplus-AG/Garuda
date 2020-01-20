@@ -1,8 +1,10 @@
-version: '0.1.{build}'
+version: '0.0.{build}'
 
 branches:
   only:
     - master
+    - develop
+    - /release.*/
 
 image: Visual Studio 2019
 
@@ -34,3 +36,33 @@ build_script:
 
 artifacts:
   - path: '**\*.nupkg'
+
+
+for:
+  -
+    branches:
+      only:
+        - develop
+
+    dotnet_csproj:
+      patch: true
+      file: '**\*.csproj'
+      version: '{version}-alpha'
+      package_version: '{version}-alpha'
+      assembly_version: '{version}-alpha'
+      file_version: '{version}-alpha'
+      informational_version: '{version}-alpha'
+
+  -
+    branches:
+      only:
+        - /release.*/
+
+    dotnet_csproj:
+      patch: true
+      file: '**\*.csproj'
+      version: '{version}-rc'
+      package_version: '{version}-rc'
+      assembly_version: '{version}-rc'
+      file_version: '{version}-rc'
+      informational_version: '{version}-rc'
