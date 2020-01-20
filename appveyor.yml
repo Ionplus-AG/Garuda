@@ -1,4 +1,4 @@
-version: '0.0.{build}'
+version: '0.1.{build}'
 
 branches:
   only:
@@ -8,6 +8,8 @@ image: Visual Studio 2019
 
 init:
   - git config --global core.autocrlf input
+
+configuration: Release
 
 dotnet_csproj:
   patch: true
@@ -25,6 +27,10 @@ build:
   parallel: true
   project: Ionplus.Garuda.sln
   publish_nuget: false
+
+build_script:
+  - cmd: dotnet build
+  - cmd: dotnet pack
 
 artifacts:
   - path: '**\*.nupkg'

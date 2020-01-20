@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Ionplus AG</Authors>
+    <Copyright>Copyright © Ionplus AG 2020</Copyright>
+    <Description>API description for the communication with a multi isotope persistence.</Description>
+    <Version>0.0.0</Version>
   </PropertyGroup>
 
 </Project>
