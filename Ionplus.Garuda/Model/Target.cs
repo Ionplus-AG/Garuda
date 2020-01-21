@@ -6,7 +6,7 @@
     public sealed class Target
     {
         public int SampleNumber { get; set; }
-        public int PrepNumber { get; set; }
+        public int PreparationNumber { get; set; }
         public int TargetNumber { get; set; }
         public int? IsotopeNumber { get; set; }
         public int? Position { get; set; }
