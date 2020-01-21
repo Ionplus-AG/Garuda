@@ -25,11 +25,6 @@ dotnet_csproj:
 before_build:
   - nuget restore
 
-build:
-  parallel: true
-  project: Ionplus.Garuda.sln
-  publish_nuget: true
-
 build_script:
   - cmd: dotnet build
   - cmd: dotnet pack
