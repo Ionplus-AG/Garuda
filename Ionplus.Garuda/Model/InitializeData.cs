@@ -2,8 +2,8 @@
 {
     public sealed class InitializeData
     {
-        string DatabaseConnectionString { get; set; }
-        int MachineNumber { get; set; }
-        string Prefix { get; set; }
+        public string DatabaseConnectionString { get; set; }
+        public int MachineNumber { get; set; }
+        public string Prefix { get; set; }
     }
 }
