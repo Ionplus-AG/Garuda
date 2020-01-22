@@ -21,24 +21,24 @@ namespace Ionplus.Garuda
     public interface ISession : IDisposable
     {
         /// <summary>
-        /// Gets the magazine updates.
+        /// Gets the magazine updates since the given time.
         /// </summary>
         /// <param name="time">The time.</param>
-        /// <returns>The magazines.</returns>
-        Task<Magazine> GetMagazineUpdates(DateTime? time);
+        /// <returns>The updated magazines since the given time.</returns>
+        Task<IEnumerable<Magazine>> GetMagazineUpdates(DateTime? time);
 
         /// <summary>
-        /// Gets the updated targets.
+        /// Gets the updated targets since the given time.
         /// </summary>
         /// <param name="time">The time.</param>
-        /// <returns>The targets.</returns>
-        Task<Target> GetUpdatedTargets(DateTime time);
+        /// <returns>The updated targets since the given time.</returns>
+        Task<IEnumerable<Target>> GetUpdatedTargets(DateTime time);
 
         /// <summary>
         /// Gets the isotopes.
         /// </summary>
         /// <returns>The isotopes.</returns>
-        Task<Isotope> GetIsotopes();
+        Task<IEnumerable<Isotope>> GetIsotopes();
 
         /// <summary>
         /// Persists the specified run.
