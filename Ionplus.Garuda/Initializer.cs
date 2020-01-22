@@ -18,7 +18,7 @@
             var types = new Type[1];
             types[0] = typeof(InitializeData);
             var constructor = connectionType.GetConstructor(types);
-            if (connectionType == null)
+            if (constructor == null)
             {
                 throw new ArgumentException("Implementation of type 'IConnection' is missing an constructor with 'InitializeData'");
             }
