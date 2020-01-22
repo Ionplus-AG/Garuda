@@ -32,8 +32,13 @@ namespace Ionplus.Garuda.Model
         public IEnumerable<Target> Targets { get; set; }
 
         /// <summary>
+        /// Gets or sets the sequences.
+        /// </summary>
+        public IEnumerable<MeasurementSequence> Sequences { get; set; }
+
+        /// <summary>
         /// Gets or sets the last changed.
         /// </summary>
-        public DateTime? LastChanged { get; set; }
+        public DateTime LastChanged { get; set; }
     }
 }

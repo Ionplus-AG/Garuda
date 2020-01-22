@@ -59,6 +59,6 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the last changed.
         /// </summary>
-        public DateTime? LastChanged { get; set; }
+        public DateTime LastChanged { get; set; }
     }
 }

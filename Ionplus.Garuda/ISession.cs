@@ -25,7 +25,7 @@ namespace Ionplus.Garuda
         /// </summary>
         /// <param name="time">The time.</param>
         /// <returns>The updated magazines since the given time.</returns>
-        Task<IEnumerable<Magazine>> GetMagazineUpdates(DateTime? time);
+        Task<IEnumerable<Magazine>> GetMagazineUpdates(DateTime time);
 
         /// <summary>
         /// Gets the updated targets since the given time.
