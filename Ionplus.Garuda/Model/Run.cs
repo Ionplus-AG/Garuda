@@ -18,7 +18,7 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the run identifier.
         /// </summary>
-        public int RunId { get; set; }
+        public int? RunId { get; set; }
 
         /// <summary>
         /// Gets or sets the cycles.
