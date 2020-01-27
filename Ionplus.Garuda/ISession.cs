@@ -28,13 +28,6 @@ namespace Ionplus.Garuda
         Task<IEnumerable<Magazine>> GetMagazineUpdates(DateTime time);
 
         /// <summary>
-        /// Gets the updated targets since the given time.
-        /// </summary>
-        /// <param name="time">The time.</param>
-        /// <returns>The updated targets since the given time.</returns>
-        Task<IEnumerable<Target>> GetUpdatedTargets(DateTime time);
-
-        /// <summary>
         /// Gets the isotopes.
         /// </summary>
         /// <returns>The isotopes.</returns>
