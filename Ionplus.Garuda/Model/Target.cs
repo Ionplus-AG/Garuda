@@ -77,11 +77,6 @@ namespace Ionplus.Garuda.Model
         public bool IsWritable { get; set; }
 
         /// <summary>
-        /// Gets or sets the runs.
-        /// </summary>
-        public IEnumerable<Run> Runs { get; set; }
-
-        /// <summary>
         /// Gets or sets the last changed.
         /// </summary>
         public DateTime LastChanged { get; set; }
