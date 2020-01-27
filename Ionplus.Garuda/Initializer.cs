@@ -32,7 +32,7 @@ namespace Ionplus.Garuda
         /// </exception>
         public static IConnection InitializeConnection(Assembly assembly, InitializeData data)
         {
-            var connectionType = assembly.GetTypes().SingleOrDefault(t => t.GetInterfaces().Any(i => i == typeof(IConnection)));
+            var connectionType = assembly.GetTypes().SingleOrDefault(t => t.GetInterfaces().Contains(typeof(IConnection)));
             if (connectionType == null)
             {
                 throw new ArgumentException("No implementation of type 'IConnection' found.");
