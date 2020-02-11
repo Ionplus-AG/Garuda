@@ -24,5 +24,10 @@ namespace Ionplus.Garuda.Model
         /// Gets or sets the cycles.
         /// </summary>
         public IEnumerable<Cycle> Cycles { get; set; }
+
+        /// <summary>
+        /// Gets or sets the target.
+        /// </summary>
+        public Target Target { get; set; }
     }
 }
