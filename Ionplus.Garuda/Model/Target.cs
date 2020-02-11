@@ -78,7 +78,7 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets a value indicating whether this instance is writable.
         /// </summary>
-        public bool MagazineName { get; set; }
+        public string MagazineName { get; set; }
 
         /// <summary>
         /// Gets or sets the last changed.
