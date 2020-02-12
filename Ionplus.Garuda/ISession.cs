@@ -58,9 +58,20 @@ namespace Ionplus.Garuda
         /// Creates the target.
         /// </summary>
         /// <param name="magazineName">Name of the magazine.</param>
-        /// <param name="target">The target.</param>
-        /// <returns>The async task.</returns>
-        Task CreateTarget(string magazineName, Target target);
+        /// <param name="sampleNumber">The sample number.</param>
+        /// <param name="preparationNumber">The preparation number.</param>
+        /// <returns>The created target.</returns>
+        Task<Target> CreateTarget(string magazineName, int sampleNumber, int preparationNumber);
+
+        /// <summary>
+        /// Creates the target.
+        /// </summary>
+        /// <param name="magazineName">Name of the magazine.</param>
+        /// <param name="sampleNumber">The sample number.</param>
+        /// <param name="preparationNumber">The preparation number.</param>
+        /// <param name="targetNumber">The target number.</param>
+        /// <returns>The created target.</returns>
+        Task<Target> CreateTarget(string magazineName, int sampleNumber, int preparationNumber, int targetNumber);
 
         /// <summary>
         /// Updates the target.
