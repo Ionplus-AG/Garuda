@@ -41,13 +41,6 @@ namespace Ionplus.Garuda
         Task<Run> Persist(Run run);
 
         /// <summary>
-        /// Adds the specified cycles.
-        /// </summary>
-        /// <param name="cycles">The cycles.</param>
-        /// <returns>The async task.</returns>
-        Task Add(IEnumerable<Cycle> cycles);
-
-        /// <summary>
         /// Updates the specified magazine.
         /// </summary>
         /// <param name="magazine">The magazine.</param>
