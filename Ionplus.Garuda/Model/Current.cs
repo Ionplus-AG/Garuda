@@ -21,6 +21,6 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the scaler.
         /// </summary>
-        public int Scaler { get; set; }
+        public long Scaler { get; set; }
     }
 }
