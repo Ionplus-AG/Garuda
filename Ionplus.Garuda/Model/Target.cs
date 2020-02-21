@@ -6,8 +6,6 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-using System;
-
 namespace Ionplus.Garuda.Model
 {
     /// <summary>
@@ -79,10 +77,5 @@ namespace Ionplus.Garuda.Model
         /// Gets or sets a value indicating whether this instance is writable.
         /// </summary>
         public string MagazineName { get; set; }
-
-        /// <summary>
-        /// Gets or sets the last changed.
-        /// </summary>
-        public DateTime LastChanged { get; set; }
     }
 }
