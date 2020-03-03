@@ -18,16 +18,16 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the run identifier.
         /// </summary>
-        public string RunId { get; set; }
+        public string RunId { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the cycles.
         /// </summary>
-        public IEnumerable<Cycle> Cycles { get; set; }
+        public IEnumerable<Cycle> Cycles { get; set; } = new List<Cycle>();
 
         /// <summary>
         /// Gets or sets the target.
         /// </summary>
-        public Target Target { get; set; }
+        public Target Target { get; set; } = null!;
     }
 }
