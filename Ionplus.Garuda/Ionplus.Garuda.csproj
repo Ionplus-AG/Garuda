@@ -1,7 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netcoreapp3.1;netstandard2.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <LangVersion>8.0</LangVersion>
     <Authors>Ionplus AG</Authors>
     <Copyright>Copyright © Ionplus AG 2020</Copyright>
     <Description>API description for the communication with a multi isotope persistence.</Description>
