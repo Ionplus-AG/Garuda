@@ -19,7 +19,7 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the isotope number.
@@ -29,12 +29,12 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the targets.
         /// </summary>
-        public IEnumerable<Target> Targets { get; set; }
+        public IEnumerable<Target> Targets { get; set; } = new List<Target>();
 
         /// <summary>
         /// Gets or sets the sequences.
         /// </summary>
-        public IEnumerable<MeasurementSequence> Sequences { get; set; }
+        public IEnumerable<MeasurementSequence> Sequences { get; set; } = new List<MeasurementSequence>();
 
         /// <summary>
         /// Gets or sets the last changed.

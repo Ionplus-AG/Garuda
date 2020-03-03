@@ -16,7 +16,7 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the database connection string.
         /// </summary>
-        public string DatabaseConnectionString { get; set; }
+        public string DatabaseConnectionString { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the machine number.
@@ -26,6 +26,6 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the prefix.
         /// </summary>
-        public string Prefix { get; set; }
+        public string Prefix { get; set; } = string.Empty;
     }
 }

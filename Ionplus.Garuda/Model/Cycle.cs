@@ -38,22 +38,22 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the ana current.
         /// </summary>
-        public Current Ana { get; set; }
+        public Current? Ana { get; set; }
 
         /// <summary>
         /// Gets or sets a current.
         /// </summary>
-        public Current A { get; set; }
+        public Current? A { get; set; }
 
         /// <summary>
         /// Gets or sets the b current.
         /// </summary>
-        public Current B { get; set; }
+        public Current? B { get; set; }
 
         /// <summary>
         /// Gets or sets the iso current.
         /// </summary>
-        public Current Iso { get; set; }
+        public Current? Iso { get; set; }
 
         /// <summary>
         /// Gets or sets the r.
