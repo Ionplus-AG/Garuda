@@ -71,6 +71,6 @@ namespace Ionplus.Garuda
         /// </summary>
         /// <param name="target">The target.</param>
         /// <returns>The updated target.</returns>
-        Task<Target> UpdateTarget(Target target);
+        Task<Target?> Update(Target target);
     }
 }
