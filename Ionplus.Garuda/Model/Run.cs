@@ -29,5 +29,15 @@ namespace Ionplus.Garuda.Model
         /// Gets or sets the target.
         /// </summary>
         public Target Target { get; set; } = null!;
+
+        /// <summary>
+        /// Gets or sets the spectra id.
+        /// </summary>
+        public int? SpectraId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the spectra path.
+        /// </summary>
+        public string? SpectraPath { get; set; }
     }
 }
