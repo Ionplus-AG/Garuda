@@ -58,17 +58,17 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the r.
         /// </summary>
-        public long R { get; set; }
+        public long? R { get; set; }
 
         /// <summary>
         /// Gets or sets the g1.
         /// </summary>
-        public long G1 { get; set; }
+        public long? G1 { get; set; }
 
         /// <summary>
         /// Gets or sets the g2.
         /// </summary>
-        public long G2 { get; set; }
+        public long? G2 { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether this instance is burn in.
