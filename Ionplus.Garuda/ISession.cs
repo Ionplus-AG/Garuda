@@ -17,7 +17,7 @@ namespace Ionplus.Garuda
     /// <summary>
     /// The session interface.
     /// </summary>
-    /// <seealso cref="System.IDisposable" />
+    /// <seealso cref="IDisposable" />
     public interface ISession : IDisposable
     {
         /// <summary>
@@ -65,6 +65,15 @@ namespace Ionplus.Garuda
         /// <param name="targetNumber">The target number.</param>
         /// <returns>The created target.</returns>
         Task<Target> CreateTarget(string magazineName, int sampleNumber, int preparationNumber, int targetNumber);
+
+        /// <summary>
+        /// Gets the target.
+        /// </summary>
+        /// <param name="sampleNumber">The sample number.</param>
+        /// <param name="preparationNumber">The preparation number.</param>
+        /// <param name="targetNumber">The target number.</param>
+        /// <returns>The target. Null if it doesn't exist.</returns>
+        Task<Target?> GetTarget(int sampleNumber, int preparationNumber, int targetNumber);
 
         /// <summary>
         /// Updates the target.
