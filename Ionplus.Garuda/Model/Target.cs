@@ -46,7 +46,7 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the comment.
         /// </summary>
-        public string Comment { get; set; } = string.Empty;
+        public string? Comment { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the type.
@@ -56,12 +56,12 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the code.
         /// </summary>
-        public string Code { get; set; } = string.Empty;
+        public string? Code { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the code number.
         /// </summary>
-        public string CodeNumber { get; set; } = string.Empty;
+        public string? CodeNumber { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the last name.
@@ -76,6 +76,6 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets a value indicating whether this instance is writable.
         /// </summary>
-        public string MagazineName { get; set; } = string.Empty;
+        public string? MagazineName { get; set; } = string.Empty;
     }
 }
