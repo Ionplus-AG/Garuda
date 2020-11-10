@@ -21,11 +21,6 @@ namespace Ionplus.Garuda.Model
         public int CycleNumber { get; set; }
 
         /// <summary>
-        /// Gets or sets the subcycle number.
-        /// </summary>
-        public int SubcycleNumber { get; set; }
-
-        /// <summary>
         /// Gets or sets the definition.
         /// </summary>
         public CycleDefinition Definition { get; set; } = new CycleDefinition();
