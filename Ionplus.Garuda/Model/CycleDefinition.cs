@@ -19,6 +19,11 @@ namespace Ionplus.Garuda.Model
         public int IsotopeNumber { get; set; }
 
         /// <summary>
+        /// Gets or sets the sequence.
+        /// </summary>
+        public int Sequence { get; set; }
+
+        /// <summary>
         /// Gets or sets the electrical charge.
         /// </summary>
         public double ElectricalCharge { get; set; }
