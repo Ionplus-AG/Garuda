@@ -36,7 +36,7 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the position.
         /// </summary>
-        public int Position { get; set; }
+        public int? Position { get; set; }
 
         /// <summary>
         /// Gets or sets the maximum cycles.

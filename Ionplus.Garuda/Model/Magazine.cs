@@ -22,11 +22,6 @@ namespace Ionplus.Garuda.Model
         public string Name { get; set; } = string.Empty;
 
         /// <summary>
-        /// Gets or sets the isotope number.
-        /// </summary>
-        public int? IsotopeNumber { get; set; }
-
-        /// <summary>
         /// Gets or sets the targets.
         /// </summary>
         public IEnumerable<Target> Targets { get; set; } = new List<Target>();
