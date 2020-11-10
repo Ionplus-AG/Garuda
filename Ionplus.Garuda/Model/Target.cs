@@ -14,29 +14,34 @@ namespace Ionplus.Garuda.Model
     public sealed class Target
     {
         /// <summary>
-        /// Gets or sets the sample number.
+        /// Gets or sets the identifier.
         /// </summary>
-        public int SampleNumber { get; set; }
+        public TargetIdentifier Id { get; set; } = new TargetIdentifier();
 
         /// <summary>
-        /// Gets or sets the preparation number.
+        /// Gets the sample number.
         /// </summary>
-        public int PreparationNumber { get; set; }
+        public int SampleNumber => this.Id.SampleNumber;
 
         /// <summary>
-        /// Gets or sets the target number.
+        /// Gets the preparation number.
         /// </summary>
-        public int TargetNumber { get; set; }
+        public int PreparationNumber => this.Id.PreparationNumber;
 
         /// <summary>
-        /// Gets or sets the isotope number.
+        /// Gets the target number.
         /// </summary>
-        public int IsotopeNumber { get; set; }
+        public int TargetNumber => this.Id.TargetNumber;
+
+        /// <summary>
+        /// Gets the isotope number.
+        /// </summary>
+        public int IsotopeNumber => this.Id.IsotopeNumber;
 
         /// <summary>
         /// Gets or sets the position.
         /// </summary>
-        public int Position { get; set; }
+        public int? Position { get; set; }
 
         /// <summary>
         /// Gets or sets the maximum cycles.
@@ -46,7 +51,7 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the comment.
         /// </summary>
-        public string? Comment { get; set; } = string.Empty;
+        public string? Comment { get; set; }
 
         /// <summary>
         /// Gets or sets the type.
@@ -56,12 +61,12 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the code.
         /// </summary>
-        public string? Code { get; set; } = string.Empty;
+        public string? Code { get; set; }
 
         /// <summary>
         /// Gets or sets the code number.
         /// </summary>
-        public string? CodeNumber { get; set; } = string.Empty;
+        public string? CodeNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the last name.
@@ -76,6 +81,6 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets a value indicating whether this instance is writable.
         /// </summary>
-        public string? MagazineName { get; set; } = string.Empty;
+        public string? MagazineName { get; set; }
     }
 }

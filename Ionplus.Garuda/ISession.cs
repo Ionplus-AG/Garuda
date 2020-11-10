@@ -48,32 +48,35 @@ namespace Ionplus.Garuda
         Task Update(Magazine magazine);
 
         /// <summary>
-        /// Creates the target.
+        /// Creates a target for the specified sample/preparation, with the next free target number.
         /// </summary>
         /// <param name="magazineName">Name of the magazine.</param>
+        /// <param name="isotopeNumber">The isotope number.</param>
         /// <param name="sampleNumber">The sample number.</param>
         /// <param name="preparationNumber">The preparation number.</param>
-        /// <returns>The created target.</returns>
-        Task<Target> CreateTarget(string magazineName, int sampleNumber, int preparationNumber);
+        /// <returns>
+        /// The created target.
+        /// </returns>
+        Task<Target> CreateTarget(string magazineName, int isotopeNumber, int sampleNumber, int preparationNumber);
 
         /// <summary>
-        /// Creates the target.
+        /// Creates a target for the specified identifier.
         /// </summary>
         /// <param name="magazineName">Name of the magazine.</param>
-        /// <param name="sampleNumber">The sample number.</param>
-        /// <param name="preparationNumber">The preparation number.</param>
-        /// <param name="targetNumber">The target number.</param>
-        /// <returns>The created target.</returns>
-        Task<Target> CreateTarget(string magazineName, int sampleNumber, int preparationNumber, int targetNumber);
+        /// <param name="id">The identifier.</param>
+        /// <returns>
+        /// The created target.
+        /// </returns>
+        Task<Target> CreateTarget(string magazineName, TargetIdentifier id);
 
         /// <summary>
-        /// Gets the target.
+        /// Gets the target with the specified identifier.
         /// </summary>
-        /// <param name="sampleNumber">The sample number.</param>
-        /// <param name="preparationNumber">The preparation number.</param>
-        /// <param name="targetNumber">The target number.</param>
-        /// <returns>The target. Null if it doesn't exist.</returns>
-        Task<Target?> GetTarget(int sampleNumber, int preparationNumber, int targetNumber);
+        /// <param name="id">The identifier.</param>
+        /// <returns>
+        /// The target or <c>null</c> if it doesn't exist.
+        /// </returns>
+        Task<Target?> GetTarget(TargetIdentifier id);
 
         /// <summary>
         /// Updates the target.

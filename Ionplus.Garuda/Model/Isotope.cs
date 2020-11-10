@@ -24,8 +24,8 @@ namespace Ionplus.Garuda.Model
         public string Name { get; set; } = string.Empty;
 
         /// <summary>
-        /// Gets or sets the weight.
+        /// Gets or sets the name markup.
         /// </summary>
-        public string Weight { get; set; } = string.Empty;
+        public string NameMarkup { get; set; } = string.Empty;
     }
 }
