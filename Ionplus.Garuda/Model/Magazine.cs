@@ -40,5 +40,13 @@ namespace Ionplus.Garuda.Model
         /// Gets or sets the last changed.
         /// </summary>
         public DateTime LastChanged { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance is a gas batch.
+        /// </summary>
+        /// <remarks>
+        /// A value of <c>null</c> means, we simply don't know.
+        /// </remarks>
+        public bool? IsGas { get; set; }
     }
 }
