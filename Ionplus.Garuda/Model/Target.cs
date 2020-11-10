@@ -14,24 +14,29 @@ namespace Ionplus.Garuda.Model
     public sealed class Target
     {
         /// <summary>
-        /// Gets or sets the sample number.
+        /// Gets or sets the identifier.
         /// </summary>
-        public int SampleNumber { get; set; }
+        public TargetIdentifier Id { get; set; } = new TargetIdentifier();
 
         /// <summary>
-        /// Gets or sets the preparation number.
+        /// Gets the sample number.
         /// </summary>
-        public int PreparationNumber { get; set; }
+        public int SampleNumber => this.Id.SampleNumber;
 
         /// <summary>
-        /// Gets or sets the target number.
+        /// Gets the preparation number.
         /// </summary>
-        public int TargetNumber { get; set; }
+        public int PreparationNumber => this.Id.PreparationNumber;
 
         /// <summary>
-        /// Gets or sets the isotope number.
+        /// Gets the target number.
         /// </summary>
-        public int IsotopeNumber { get; set; }
+        public int TargetNumber => this.Id.TargetNumber;
+
+        /// <summary>
+        /// Gets the isotope number.
+        /// </summary>
+        public int IsotopeNumber => this.Id.IsotopeNumber;
 
         /// <summary>
         /// Gets or sets the position.
