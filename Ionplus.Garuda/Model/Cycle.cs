@@ -21,9 +21,9 @@ namespace Ionplus.Garuda.Model
         public int CycleNumber { get; set; }
 
         /// <summary>
-        /// Gets or sets the subcycle number.
+        /// Gets or sets the definition.
         /// </summary>
-        public int SubcycleNumber { get; set; }
+        public CycleDefinition Definition { get; set; } = new CycleDefinition();
 
         /// <summary>
         /// Gets or sets the runtime.
@@ -36,7 +36,7 @@ namespace Ionplus.Garuda.Model
         public DateTime EndTime { get; set; }
 
         /// <summary>
-        /// Gets or sets the ana current.
+        /// Gets or sets the ANA current.
         /// </summary>
         public Current? Ana { get; set; }
 
@@ -51,9 +51,9 @@ namespace Ionplus.Garuda.Model
         public Current? B { get; set; }
 
         /// <summary>
-        /// Gets or sets the iso current.
+        /// Gets or sets the c current.
         /// </summary>
-        public Current? Iso { get; set; }
+        public Current? C { get; set; }
 
         /// <summary>
         /// Gets or sets the r.
