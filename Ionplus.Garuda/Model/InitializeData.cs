@@ -19,6 +19,16 @@ namespace Ionplus.Garuda.Model
         public string DatabaseConnectionString { get; set; } = string.Empty;
 
         /// <summary>
+        /// Gets or sets the type of the server.
+        /// </summary>
+        public ServerType ServerType { get; set; }
+
+        /// <summary>
+        /// Gets or sets the server version.
+        /// </summary>
+        public string ServerVersion { get; set; } = string.Empty;
+
+        /// <summary>
         /// Gets or sets the machine number.
         /// </summary>
         public int MachineNumber { get; set; }
