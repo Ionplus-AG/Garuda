@@ -41,13 +41,6 @@ namespace Ionplus.Garuda
         Task<Run> Persist(Run run);
 
         /// <summary>
-        /// Updates the specified magazine.
-        /// </summary>
-        /// <param name="magazine">The magazine.</param>
-        /// <returns>The async task.</returns>
-        Task Update(Magazine magazine);
-
-        /// <summary>
         /// Creates a target for the specified sample/preparation, with the next free target number.
         /// </summary>
         /// <param name="magazineName">Name of the magazine.</param>
