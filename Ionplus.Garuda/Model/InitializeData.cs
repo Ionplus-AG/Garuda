@@ -24,9 +24,9 @@ namespace Ionplus.Garuda.Model
         public ServerType ServerType { get; set; }
 
         /// <summary>
-        /// Gets or sets the version.
+        /// Gets or sets the server version.
         /// </summary>
-        public string Version { get; set; } = string.Empty;
+        public string ServerVersion { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the machine number.
