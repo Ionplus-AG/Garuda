@@ -33,6 +33,11 @@ namespace Ionplus.Garuda
         string Prefix { get; }
 
         /// <summary>
+        /// Gets the sample family mapper.
+        /// </summary>
+        ISampleFamilyMapper SampleFamilyMapper { get; }
+
+        /// <summary>
         /// Evaluates the is connected state.
         /// </summary>
         /// <returns><c>true</c> if it is connected; otherwise, <c>false</c>.</returns>
