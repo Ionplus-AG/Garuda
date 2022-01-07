@@ -82,5 +82,10 @@ namespace Ionplus.Garuda.Model
         /// Gets or sets a value indicating whether this instance is writable.
         /// </summary>
         public string? MagazineName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the weight in g.
+        /// </summary>
+        public double? Weight { get; set; }
     }
 }
