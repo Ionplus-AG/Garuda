@@ -39,9 +39,11 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets a value indicating whether this instance is a gas batch.
         /// </summary>
-        /// <remarks>
-        /// A value of <c>null</c> means, we simply don't know.
-        /// </remarks>
-        public bool? IsGas { get; set; }
+        public bool IsGasBatch { get; set; }
+
+        /// <summary>
+        /// Gets or sets the number of runins.
+        /// </summary>
+        public int? Runins { get; set; }
     }
 }
