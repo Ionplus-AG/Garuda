@@ -87,5 +87,10 @@ namespace Ionplus.Garuda.Model
         /// Gets or sets the weight in g.
         /// </summary>
         public double? Weight { get; set; }
+
+        /// <summary>
+        /// Gets or sets the carbon percentage.
+        /// </summary>
+        public double? CarbonPercentage { get; set; }
     }
 }
