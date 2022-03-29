@@ -19,8 +19,8 @@ namespace Ionplus.Garuda.Model
         public int Number { get; set; }
 
         /// <summary>
-        /// Gets or sets the position.
+        /// Gets or sets the identifier.
         /// </summary>
-        public int Position { get; set; }
+        public TargetIdentifier Id { get; set; } = new TargetIdentifier();
     }
 }
