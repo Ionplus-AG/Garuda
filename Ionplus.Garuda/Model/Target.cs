@@ -1,10 +1,12 @@
-﻿// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // <copyright file="Target.cs" company="Ionplus AG">
 // Copyright (c) Ionplus AG. All rights reserved.
 // Licensed under the MIT license.
 // See LICENSE in the project root for full license information.
 // </copyright>
 // -----------------------------------------------------------------------
+
+using UnitsNet;
 
 namespace Ionplus.Garuda.Model
 {
@@ -86,7 +88,7 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the weight in g.
         /// </summary>
-        public double? Weight { get; set; }
+        public Mass? Weight { get; set; }
 
         /// <summary>
         /// Gets or sets the carbon percentage.
