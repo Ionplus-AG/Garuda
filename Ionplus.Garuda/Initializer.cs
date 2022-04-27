@@ -1,4 +1,4 @@
-﻿// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // <copyright file="Initializer.cs" company="Ionplus AG">
 // Copyright (c) Ionplus AG. All rights reserved.
 // Licensed under the MIT license.

@@ -2,13 +2,15 @@
 root = true
 
 [*]
-end_of_line = CRLF
+end_of_line = LF
 trim_trailing_whitespace = true
 insert_final_newline = true
-
-[*.cs]
+charset = utf-8
 indent_style = space
 indent_size = 4
+
+[*.{yaml,yml,json,config,csproj,sh}]
+indent_size = 2
 
 # SA0001 XML comment analysis disabled
 dotnet_diagnostic.SA0001.severity = none
