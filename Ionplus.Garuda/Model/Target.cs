@@ -86,7 +86,7 @@ namespace Ionplus.Garuda.Model
         public string? MagazineName { get; set; }
 
         /// <summary>
-        /// Gets or sets the weight in g.
+        /// Gets or sets the weight.
         /// </summary>
         public Mass? Weight { get; set; }
 
