@@ -33,6 +33,11 @@ namespace Ionplus.Garuda
         string Prefix { get; }
 
         /// <summary>
+        /// Gets the connection description.
+        /// </summary>
+        string ConnectionDescription { get; }
+
+        /// <summary>
         /// Gets the sample family mapper.
         /// </summary>
         ISampleFamilyMapper SampleFamilyMapper { get; }
