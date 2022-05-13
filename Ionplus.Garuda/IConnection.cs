@@ -33,14 +33,9 @@ namespace Ionplus.Garuda
         string Prefix { get; }
 
         /// <summary>
-        /// Gets the connection error message.
+        /// Gets the connection description.
         /// </summary>
-        string ConnectionErrorMessage { get; }
-
-        /// <summary>
-        /// Gets the synhcronization failure message.
-        /// </summary>
-        string SynchronizationFailureMessage { get; }
+        string ConnectionDescription { get; }
 
         /// <summary>
         /// Gets the sample family mapper.
