@@ -1,10 +1,12 @@
-﻿// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // <copyright file="Current.cs" company="Ionplus AG">
 // Copyright (c) Ionplus AG. All rights reserved.
 // Licensed under the MIT license.
 // See LICENSE in the project root for full license information.
 // </copyright>
 // -----------------------------------------------------------------------
+
+using UnitsNet;
 
 namespace Ionplus.Garuda.Model
 {
@@ -16,7 +18,7 @@ namespace Ionplus.Garuda.Model
         /// <summary>
         /// Gets or sets the value.
         /// </summary>
-        public double Value { get; set; }
+        public ElectricCurrent Value { get; set; }
 
         /// <summary>
         /// Gets or sets the scaler.

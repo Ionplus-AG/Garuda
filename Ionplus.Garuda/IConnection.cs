@@ -1,4 +1,4 @@
-﻿// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // <copyright file="IConnection.cs" company="Ionplus AG">
 // Copyright (c) Ionplus AG. All rights reserved.
 // Licensed under the MIT license.
@@ -31,6 +31,11 @@ namespace Ionplus.Garuda
         /// Gets the prefix.
         /// </summary>
         string Prefix { get; }
+
+        /// <summary>
+        /// Gets the connection description.
+        /// </summary>
+        string ConnectionDescription { get; }
 
         /// <summary>
         /// Gets the sample family mapper.
