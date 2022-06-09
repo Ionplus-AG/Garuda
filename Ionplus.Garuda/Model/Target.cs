@@ -81,6 +81,11 @@ namespace Ionplus.Garuda.Model
         public bool IsWritable { get; set; }
 
         /// <summary>
+        /// Gets or sets a value indicating whether this instance is consumed.
+        /// </summary>
+        public bool IsConsumed { get; set; }
+
+        /// <summary>
         /// Gets or sets a value indicating whether this instance is writable.
         /// </summary>
         public string? MagazineName { get; set; }
