@@ -91,13 +91,13 @@ namespace Ionplus.Garuda.Model
         public string? MagazineName { get; set; }
 
         /// <summary>
-        /// Gets or sets the weight.
+        /// Gets or sets the total weight of the sample.
         /// </summary>
-        public Mass? Weight { get; set; }
+        public Mass? SampleWeight { get; set; }
 
         /// <summary>
-        /// Gets or sets the carbon percentage.
+        /// Gets or sets the carbon weight of the sample.
         /// </summary>
-        public double? CarbonPercentage { get; set; }
+        public Mass? CarbonWeight { get; set; }
     }
 }
