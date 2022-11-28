@@ -1,4 +1,4 @@
-version: '0.11.{build}'
+version: "0.12.{build}"
 
 branches:
   only:
@@ -16,11 +16,11 @@ configuration: Release
 dotnet_csproj:
   patch: true
   file: '**\*.csproj'
-  version: '{version}'
-  package_version: '{version}'
-  assembly_version: '{version}'
-  file_version: '{version}'
-  informational_version: '{version}'
+  version: "{version}"
+  package_version: "{version}"
+  assembly_version: "{version}"
+  file_version: "{version}"
+  informational_version: "{version}"
 
 before_build:
   - nuget restore
@@ -35,35 +35,33 @@ artifacts:
 deploy:
   provider: NuGet
   api_key:
-    secure: tSlem5hvXmnA6S8QG9kioO+zgDKSY76XLBwzPABM4QkcQRC/Wn9eUI0mrTkMYNiY
+    secure: Dj4GEf7GNLb/mROmwRhBhYhRemw9o3w98QvI7Ff0sE74euTL4khy5Hfgg3ErZfNg
   skip_symbols: false
   artifact: /.*\.nupkg/
 
 for:
-  -
-    branches:
+  - branches:
       only:
         - develop
 
     dotnet_csproj:
       patch: true
       file: '**\*.csproj'
-      version: '{version}-alpha'
-      package_version: '{version}-alpha'
-      assembly_version: '{version}-alpha'
-      file_version: '{version}-alpha'
-      informational_version: '{version}-alpha'
+      version: "{version}-alpha"
+      package_version: "{version}-alpha"
+      assembly_version: "{version}-alpha"
+      file_version: "{version}-alpha"
+      informational_version: "{version}-alpha"
 
-  -
-    branches:
+  - branches:
       only:
         - /release.*/
 
     dotnet_csproj:
       patch: true
       file: '**\*.csproj'
-      version: '{version}-rc'
-      package_version: '{version}-rc'
-      assembly_version: '{version}-rc'
-      file_version: '{version}-rc'
-      informational_version: '{version}-rc'
+      version: "{version}-rc"
+      package_version: "{version}-rc"
+      assembly_version: "{version}-rc"
+      file_version: "{version}-rc"
+      informational_version: "{version}-rc"
