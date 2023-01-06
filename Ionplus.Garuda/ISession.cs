@@ -24,8 +24,8 @@ namespace Ionplus.Garuda
         /// Gets the magazine updates since the given time.
         /// </summary>
         /// <param name="time">The time.</param>
-        /// <returns>The updated magazines since the given time.</returns>
-        Task<IEnumerable<Magazine>> GetMagazineUpdates(DateTime time);
+        /// <returns>The updated and obsolete magazines since the given time.</returns>
+        Task<(IEnumerable<Magazine> Magazines, IEnumerable<string> Obsolete)> GetMagazineUpdates(DateTime time);
 
         /// <summary>
         /// Gets the isotopes.
