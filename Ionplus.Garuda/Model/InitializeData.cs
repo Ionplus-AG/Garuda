@@ -37,5 +37,10 @@ namespace Ionplus.Garuda.Model
         /// Gets or sets the prefix.
         /// </summary>
         public string Prefix { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the instrument id.
+        /// </summary>
+        public string? InstrumentId { get; set; }
     }
 }
