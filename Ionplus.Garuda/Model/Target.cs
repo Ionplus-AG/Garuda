@@ -91,6 +91,11 @@ namespace Ionplus.Garuda.Model
         public string? MagazineName { get; set; }
 
         /// <summary>
+        /// Gets or sets the magazine of the target.
+        /// </summary>
+        public Magazine? Magazine { get; set; }
+
+        /// <summary>
         /// Gets or sets the total weight of the sample.
         /// </summary>
         public Mass? SampleWeight { get; set; }
